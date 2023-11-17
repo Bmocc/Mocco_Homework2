@@ -1,0 +1,33 @@
+{% extends "navbar.html" %}
+{% block content %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Country Details</title>
+</head>
+
+<body>
+    <h3>Search:</h3>
+    Country ID: {{country_id}}<br>
+    <h3>Results:</h3>
+    {% if response_json["data"] %}
+    <table>
+        <tr>
+            Country: {{ response_json["data"]["name"] }}<br>
+            Capital: {{ response_json["data"]["capital"] }}<br>
+            CallingCode: {{ response_json["data"]["callingCode"] }}<br>
+            Number of Regions: {{ response_json["data"]["numRegions"] }}<br>
+        </tr>
+
+    </table>
+    {% else %}
+    No results, please try again.
+    {% endif %}
+</body>
+
+</html>
+{% endblock %}
