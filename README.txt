@@ -21,3 +21,6 @@ This allows the user to input a country ID and see the name, capital, calling co
 This allows the user to input a city ID and get the name, population, and country of that city.
 
             URL: "https://wft-geo-db.p.rapidapi.com/v1/geo/cities/" 
+
+
+![Alt text](C:\Users\bmocc\OneDrive\Pictures\Screenshots\Screenshot 2023-11-17 170442.png?raw=true "Screenshot 1")
